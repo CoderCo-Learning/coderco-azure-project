@@ -52,13 +52,6 @@ source .venv/bin/activate
 pip3 install -r requirements.txt
 ### run the app
 python3 app.py ## python3 app.py
-
-## Build Dockerfile
-
-cd app
-docker build -t coderco-task-manager .
-
-docker run -p 3000:3000 coderco-task-manager
 ```
 
 ### API
