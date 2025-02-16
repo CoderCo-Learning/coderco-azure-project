@@ -70,27 +70,6 @@ curl -X PUT -H "Content-Type: application/json" -d '{"completed":true}' http://l
 curl -X DELETE http://localhost:3000/tasks/1
 ```
 
-### Example Architecture
-
-+---------------------+       +------------------------+
-| GitHub / DevOps CI  |       |  Azure Container       |
-| (Build & Push Image)| --->  |  Registry (ACR)        |
-+---------------------+       +-----------+------------+
-                                        |
-                                        v
-                               +------------------------+
-                               | Azure Container Apps   |
-                               | or AKS                 |
-                               +-----------+------------+
-                                           |
-                                           v
-                               +------------------------+
-                               | App Gateway / Front Door
-                               | HTTPS / Domain          |
-                               +------------------------+
-
-- Use Mermaid or draw.io to create the architecture diagram.
-
 ## Screenshots
 
 Add screenshots of your deployed application here. For example:
