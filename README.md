@@ -1,6 +1,8 @@
-# Project: CoderCo Assignment 1 - Open Source App Hosted on Azure with Terraform 🚀
+<div align="center">
+    <img src="./app/static/images/coderco_logo.jpeg" alt="CoderCo" width="300"/>
+</div>
 
-![CoderCo Logo](app/static/images/coderco_logo.jpeg)
+# Project: CoderCo Assignment 1 - Open Source App Hosted on Azure with Terraform 🚀
 
 ## Overview
 
