@@ -1,10 +1,18 @@
-# Project: CoderCo Assignment 1 - Open Source App Hosted on Azure with Terraform
+# Project: CoderCo Assignment 1 - Open Source App Hosted on Azure with Terraform 🚀
+
+![CoderCo Logo](app/static/images/coderco_logo.jpeg)
 
 ## Overview
 
-This project mirrors the AWS ECS-based setup, but we will now deploy the open-source app on Azure using Azure Container Apps (or alternatively, AKS for greater flexibility).
+This project mirrors the AWS ECS-based setup, but we will now deploy the open-source app on Azure using Azure Container Apps. 
 
 The goal is to package, build, and deploy an application using Terraform and CI/CD pipelines, ensuring best practices in infrastructure as code, security, and scalability.
+
+Key Components:
+- Azure Container Registry (ACR) for container images.
+- Azure Container Apps (or AKS) to run containers.
+- Azure Application Gateway or Front Door for HTTPS routing.
+- GitHub Actions or Azure DevOps for CI/CD (your choice).
 
 ## Task/Assignment
 
@@ -50,3 +58,31 @@ docker build -t coderco-task-manager .
 
 docker run -p 3000:3000 coderco-task-manager
 ```
+
+### Example Architecture
+
++---------------------+       +------------------------+
+| GitHub / DevOps CI  |       |  Azure Container       |
+| (Build & Push Image)| --->  |  Registry (ACR)        |
++---------------------+       +-----------+------------+
+                                        |
+                                        v
+                               +------------------------+
+                               | Azure Container Apps   |
+                               | or AKS                 |
+                               +-----------+------------+
+                                           |
+                                           v
+                               +------------------------+
+                               | App Gateway / Front Door
+                               | HTTPS / Domain          |
+                               +------------------------+
+
+- Use Mermaid or draw.io to create the architecture diagram.
+
+## Screenshots
+
+Add screenshots of your deployed application here. For example:
+
+- Home Page
+- Task Manager in Action
