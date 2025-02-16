@@ -16,7 +16,7 @@ Key Components:
 - Azure Application Gateway or Front Door for HTTPS routing.
 - GitHub Actions or Azure DevOps for CI/CD (your choice).
 
-## Task/Assignment
+## Task/Assignment 📝
 
 - Create a repository for your work.
 - Containerize the app and push it to Azure Container Registry (ACR).
@@ -30,7 +30,7 @@ Key Components:
 - Add screenshots of the live app to the README.md.
 - Include an architecture diagram of your infrastructure (Lucidchart, draw.io, or Mermaid).
 
-## Guidance & Hints
+## Guidance & Hints 📚
 
 ### Directory Structure
 
@@ -40,7 +40,7 @@ Key Components:
 - `docs/` - Documentation for the project. Diagrams/Architectures.
 - `README.md` - Project documentation.
 
-### Local app
+### Local app 💻
 
 ```bash
 cd app
