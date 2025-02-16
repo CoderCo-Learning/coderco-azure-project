@@ -1,0 +1,112 @@
+/* Overall page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7fbfc; /* Light subtle blue background */
+    color: #333;
+  }
+  
+  /* Header with logo */
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #003366; /* Darker blue bar */
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    height: 40px; /* Adjust as needed */
+    margin-right: 20px;
+  }
+  
+  header h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  /* Main content container */
+  #main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Task container styling */
+  #task-container {
+    flex: 1 1 60%;
+    margin-right: 20px;
+  }
+  
+  .task {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .task h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .task p {
+    margin: 5px 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* New task form */
+  #new-task-form {
+    flex: 1 1 35%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  #new-task-form h2 {
+    margin-top: 0;
+    color: #003366; /* Tie into the blue theme */
+  }
+  
+  #add-task-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  #add-task-form button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  #add-task-form button:hover {
+    background-color: #00509d; /* Slightly lighter blue on hover */
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    #main-content {
+      flex-direction: column;
+    }
+    #task-container, 
+    #new-task-form {
+      flex: 1 1 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  

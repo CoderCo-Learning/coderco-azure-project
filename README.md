@@ -15,8 +15,8 @@ The goal is to package, build, and deploy an application using Terraform and CI/
   - Azure Container Apps
 - Expose the application via HTTPS using Azure Application Gateway or Azure Front Door.
 - Ensure the app is available at:
-  - https://tm.<your-domain> or
-  - https://tm.labs.<your-domain>.
+  - https://tm.<your-domain>.co.uk or
+  - https://tm.labs.<your-domain>.co.uk
 - Add screenshots of the live app to the README.md.
 - Include an architecture diagram of your infrastructure (Lucidchart, draw.io, or Mermaid).
 
@@ -26,6 +26,26 @@ The goal is to package, build, and deploy an application using Terraform and CI/
 
 - `terraform/` - Terraform configuration for Azure resources. Use modules for reusable components.
 - `app/` -  App code and Dockerfile.
-- `.github/workflows/` - CI/CD pipeline configuration (GitHub Actions).
+- `.github/workflows/` - CI/CD pipeline configuration (GitHub Actions). Or any other CI/CD tool you want to use.
 - `docs/` - Documentation for the project. Diagrams/Architectures.
 - `README.md` - Project documentation.
+
+### Local app
+
+```bash
+cd app
+
+### create a virtual environment
+python3 -m venv .venv
+
+source .venv/bin/activate
+pip3 install -r requirements.txt
+### run the app
+python3 app.py ## python3 app.py
+
+## Build Dockerfile
+
+docker build -t coderco-task-manager .
+
+docker run -p 3000:3000 coderco-task-manager
+```

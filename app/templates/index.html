@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CoderCo Task Manager</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <!-- Replace `coderco_logo.png` with your actual filename if different -->
+    <img src="/static/images/coderco_logo.jpeg" alt="CoderCo logo" class="logo">
+    <h1>CoderCo Task Manager</h1>
+  </header>
+
+  <div id="main-content">
+    <div id="task-container">
+      <!-- Task list will be loaded here by script.js -->
+    </div>
+
+    <div id="new-task-form">
+      <h2>Add New Task</h2>
+      <form id="add-task-form">
+        <input type="text" id="task-title" placeholder="Task title" required>
+        <input type="text" id="task-description" placeholder="Task description">
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
