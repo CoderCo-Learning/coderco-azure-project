@@ -61,6 +61,22 @@ docker build -t coderco-task-manager .
 docker run -p 3000:3000 coderco-task-manager
 ```
 
+### API
+
+```bash
+# Create task
+curl -X POST -H "Content-Type: application/json" -d '{"title":"New Task"}' http://localhost:3000/tasks
+
+# List tasks
+curl http://localhost:3000/tasks
+
+# Update task
+curl -X PUT -H "Content-Type: application/json" -d '{"completed":true}' http://localhost:3000/tasks/1
+
+# Delete task
+curl -X DELETE http://localhost:3000/tasks/1
+```
+
 ### Example Architecture
 
 +---------------------+       +------------------------+
